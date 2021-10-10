@@ -1,4 +1,4 @@
 # Handlebars
  https://handlebarsjs.com/
 
-How to Use Sample with Example
+How to use Sample file with Example

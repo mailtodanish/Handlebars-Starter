@@ -13,3 +13,11 @@ Style
 ----
 npm i --save-dev style-loader css-loader
 npm run build
+
+
+
+npm install --save handlebars
+npm i handlebars-loader --save
+
+
+npm install handlebars-template-loader

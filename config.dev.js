@@ -1,13 +1,22 @@
-const path = require("path");
+const Path = require("path");
 module.exports = {
     mode: "production",
-    entry: "./src/index.js",
+    entry: Path.resolve(__dirname, "src/index.js"),
 
     //loader
     module: {
         rules: [{
-            test: /\.css$/,
-            use: ["style-loader", "css-loader"],
-        }, ],
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+            },
+            {
+                test: /\.hbs$/,
+
+                loader: "handlebars-loader",
+                options: {
+                    runtime: Path.resolve(__dirname, "src/handler.js"),
+                },
+            },
+        ],
     },
 };
